@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var w = 52;
+        var name = "Diana";
+        var h = 65;
+
+        var finw = w * 2.205 + " lbs"; 
+        var h1 = Math.floor(h / 12);
+        var h2 = h % 12;
+        var finh = h1 + "'" + h2 + "\""+ " ft";
+
+        var final = "Name: " + name + "\nHeight: " + finh +"\nWeight: " + finw;
+        alert(final);
+    </script>
+    <p id="user"></p>
+    <p id="bday"></p>
+    <script>
+        var per = prompt("Enter your name: ", "Diluc");
+        var ln = prompt("Enter your last name: ", "Sanchez");
+        var year = prompt("Enter your year of birth: ", "2000");
+
+        var age = 2024 - parseInt(year);
+
+        document.getElementById("user").innerHTML = "Hello "+ per +" "+ ln +"! "+  "How does it feel to be "+ age + " years old?";
+    </script>
+
+    <br>
+    <button onclick="myFunction()">Will you allow sharing this information with the site?</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var text;
+            if(confirm("Please confirm")){
+                txt = "Name: " + per + "<br>Last Name: " + ln + "<br>Year of Birth: " + year;
+            } else{
+                txt = "User does not wish to share his/her information.";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

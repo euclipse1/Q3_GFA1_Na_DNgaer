@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+    background-color: rgb(228, 255, 214);
+    font-family: "Questrial", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
